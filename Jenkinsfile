@@ -10,7 +10,7 @@ node('built-in')
         }
           stage('Continuous Deployment')
             {
-                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: '2e5986f7-49df-4694-8979-8164566d13a1', path: '', url: 'http://3.26.60.224:8080')], contextPath: 'testapp', war: '**/*.war'
+                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: '2e5986f7-49df-4694-8979-8164566d13a1', path: '', url: 'http://54.79.149.20:8080')], contextPath: 'testapp', war: '**/*.war'
             }
         stage('Continuous Testing')
               {  
@@ -19,7 +19,7 @@ node('built-in')
              }
                 stage('Continuos Delivery')
                     {
-                        deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: '2e5986f7-49df-4694-8979-8164566d13a1', path: '', url: 'http://3.107.54.237:8080')], contextPath: 'prodapp', war: '**/*.war'
+                        deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: '2e5986f7-49df-4694-8979-8164566d13a1', path: '', url: 'http://3.26.62.132:8080')], contextPath: 'prodapp', war: '**/*.war'
                     }
 }
 
