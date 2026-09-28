@@ -15,7 +15,7 @@ node('built-in')
         stage('Continuous Testing')
               {  
                 git 'https://github.com/IntelliqDevops/FunctionalTesting.git'
-                sh 'java -jar /var/lib/jenkins/workspace/Development1/testing.jar'
+                sh 'java -jar /var/lib/jenkins/workspace/DeclarativePipeline/testing.jar'
              }
                 stage('Continuos Delivery')
                     {
